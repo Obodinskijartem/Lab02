@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2Lib
 {
-    public class Subscriber
+    public class SubscriberLib
     {
  
             public string Name;            // Ім'я абонента

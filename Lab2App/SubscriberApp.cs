@@ -7,15 +7,15 @@ using Lab2Lib;
 
 namespace Lab2App
 {
-    internal class Program
+    internal class SubscriberApp
     {
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Subscriber[] arrSubscribers;
+            SubscriberLib[] arrSubscribers;
             Console.Write("Введіть кількість абонентів: ");
             int cntSubscribers = int.Parse(Console.ReadLine());
-            arrSubscribers = new Subscriber[cntSubscribers];
+            arrSubscribers = new SubscriberLib[cntSubscribers];
             for (int i = 0; i < cntSubscribers; i++)
             {
                 Console.Write("Введіть ім'я абонента: ");
@@ -35,7 +35,7 @@ namespace Lab2App
                 string sMonthlyFee = Console.ReadLine();
                 Console.WriteLine();
 
-                Subscriber theSubscriber = new Subscriber();
+                SubscriberLib theSubscriber = new SubscriberLib();
                 theSubscriber.Name = sName;
                 theSubscriber.PhoneNumber = sPhoneNumber;
                 theSubscriber.Address = sAddress;
@@ -47,7 +47,7 @@ namespace Lab2App
                 arrSubscribers[i] = theSubscriber;
             }
 
-            foreach (Subscriber s in arrSubscribers)
+            foreach (SubscriberLib s in arrSubscribers)
             {
                 Console.WriteLine();
                 Console.WriteLine("----------------------------------------");
